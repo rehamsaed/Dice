@@ -217,8 +217,25 @@ main {
   text-align: center;
   padding: 1rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(182, 180, 180, 0.3);
   border-radius: 9px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.player--active .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.player--active .score {
+  font-weight: 600;
+  color: #222;
 }
 
 .name {
